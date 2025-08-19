@@ -25,6 +25,11 @@ public class Book {
     public Book() {
     }
 
+    public Book(DadosBook dadosBook) {
+        this.title = dadosBook.title();
+        this.language = dadosBook.language().get(0);
+    }
+
     public Long getId() {
         return id;
     }
